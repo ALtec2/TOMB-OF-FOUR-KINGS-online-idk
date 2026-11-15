@@ -1,11 +1,14 @@
 import java.util.ArrayList;
 public class textAdventure{
 	int torch = 4;
-	int[] selection = {0,0};
 	ArrayList<Integer> monsterDeck = new ArrayList<>();
 	ArrayList<Integer> trapsDeck = new ArrayList<>();
 	ArrayList<Integer> sealedDeck = new ArrayList<>();
 	ArrayList<Integer> healthDeck = new ArrayList<>();
+	ArrayList<Integer> items = new ArrayList<>();
+	int devineFavor = 0;
+	int score  =0;
+	boolean works = true;
 
 
 	public void main(String []arg){
@@ -16,7 +19,7 @@ public class textAdventure{
 		healthDeck.add(14);
 
 
-	} 
+	}
 
 	public void addInList(ArrayList<Integer> deck){
 		for(int x = 0; x < 14; x++){
@@ -28,29 +31,25 @@ public class textAdventure{
 	public void randomNumber(){
 		int randomDeck = (int)Math.random()*4;
 		int randomCard = (int)Math.random()*13;
-		boolean works = true;
 		while(works){
 			if(randomDeck == 0 && !(monsterDeck.isEmpty())){
-				selection[0] = 1;
+				;
 			}
 			if(randomDeck == 1 && !(monsterDeck.isEmpty())){
-				selection[0] = 2;
+				;
 			}
 			if(randomDeck == 2 && !(monsterDeck.isEmpty())){
-				selection[0] = 3;
+				;
 			}
-			if(randomDeck == 0 && !(monsterDeck.isEmpty())){
-
-					if(randomCard >= 2 && randomCard <= 10){
-						;
-					}
-					else{
-						healthDeck(randomCard);
-					}
-
-				
+			if(randomDeck == 0 && healthDeck.size() > 8){ 
+				if(randomCard <= 2 || randomCard >= 10){
+						if(randomCard <= 2 || randomCard >= 10){
+							healthDeck(randomCard);
+						}
+						randomCard = (int)Math.random()*14;
+				}
 			}
-		}
+		} 
 	}
 
 	public void healthDeck(int randomCard){
@@ -59,16 +58,22 @@ public class textAdventure{
 			healthDeck.remove(randomCard);
 		}
 		else if(healthDeck.get(randomCard) == 11){
+			items.add(4);
 			healthDeck.remove(randomCard);
 		}
 		else if(healthDeck.get(randomCard) == 12){
+			devineFavor++;
 			healthDeck.remove(randomCard);
 		}
 		else if(healthDeck.get(randomCard) == 13){
 			healthDeck.remove(randomCard);
+			score += 20;
 		}
 		else if(healthDeck.get(randomCard) == 14){
 			healthDeck.remove(randomCard);
+			torch += 999;
 		}
 	}
+
+	
 }
