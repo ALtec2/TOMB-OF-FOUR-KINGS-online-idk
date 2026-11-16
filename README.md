@@ -1,6 +1,6 @@
 <img width="1280" height="800" alt="Screen Shot 2026-11-15 at 9 30 25 PM" src="https://github.com/user-attachments/assets/c86ae6f9-c0fb-44ef-9292-4ca6bc31e372" />
 
-# TOMB-OF-FOUR-KINGS-online-idk
+# TOMB-OF-FOUR-KINGS
 
 ## Why I made it
 - I didn't feel like learning anything this week and I play this game alot so I made it for fun :)
