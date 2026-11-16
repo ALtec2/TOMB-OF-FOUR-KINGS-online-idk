@@ -9,7 +9,7 @@
 - This is a semi-game that is based off of the game Tomb of the four kings
 - The rules for the actual game is linked here: https://matthewlowes.com/wp-content/uploads/2016/01/dungeon-solitaire-tofk.pdf
 
-##How to run
+## How to run
 - To run download the .jar file from here: tk
 - then if your on mac java -jar /path/to/TombOfTheFourKing.jar
 - obviously change it to the path to your file
