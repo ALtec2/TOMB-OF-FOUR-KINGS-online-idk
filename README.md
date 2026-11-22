@@ -10,10 +10,13 @@
 - The rules for the actual game is linked here: https://matthewlowes.com/wp-content/uploads/2016/01/dungeon-solitaire-tofk.pdf
 
 ## How to run
-- To run download the .jar file from here: tk
+- To run download the .jar file from here: https://altecs.itch.io/tomb-of-the-four-king-demo
 - then if your on mac java -jar /path/to/TombOfTheFourKing.jar
 - obviously change it to the path to your file
 - if your not on mac you can see if it works its probably just click on the link
+
+- NOTE
+- there is also a dmg download there too, I don't know how to run it, it doesn't run because you need to put it in a terminal for it to work so used the top method. 
 
 ## How I made it
 
