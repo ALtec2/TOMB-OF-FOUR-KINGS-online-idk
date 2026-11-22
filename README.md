@@ -15,7 +15,7 @@
 - obviously change it to the path to your file
 - if your not on mac you can see if it works its probably just click on the link
 
-- NOTE
+- ## NOTE
 - there is also a dmg download there too, I don't know how to run it, it doesn't run because you need to put it in a terminal for it to work so used the top method. 
 
 ## How I made it
